@@ -19,6 +19,8 @@ public class WebApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 
+		repository.deleteAll();
+
 		repository.save(new Product("Брус",
 				"Обычный брус, ничего необычного",
 				100,100,6,
@@ -35,5 +37,26 @@ public class WebApplication implements CommandLineRunner{
 				"Обычный брус, ничего необычного",
 				150,100,4,
 				2000));
- }
+
+//		System.out.println("AllFinder found with findAll():");
+//		System.out.println("-------------------------------");
+//		for (Product product : repository.findAll()) {
+//			System.out.println(product);
+//		}
+//		System.out.println();
+//
+//		// fetch an individual customer
+//		System.out.println("Customer found with findByFirstName('Alice'):");
+//		System.out.println("--------------------------------");
+//		for (Product product : repository.findByPrice(2000)) {
+//			System.out.println(product);
+//		}
+//		System.out.println();
+//
+//		System.out.println("Customers found with findByLastName('Smith'):");
+//		System.out.println("--------------------------------");
+//		for (Product product : repository.findByWidth(100)) {
+//			System.out.println(product);
+//		}
+ 	}
 }

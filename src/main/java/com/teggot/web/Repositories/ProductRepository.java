@@ -10,7 +10,7 @@ public interface ProductRepository extends MongoRepository<Product, String>{
     public List<Product> findByName(String _name);
     public List<Product> findByWidth(int _width);
     public List<Product> findByHeight(int _height);
-    public List<Product> findByLon(int _lon);
+    public List<Product> findByLength(int _length);
     public List<Product> findByPrice(int _price);
 
 }
