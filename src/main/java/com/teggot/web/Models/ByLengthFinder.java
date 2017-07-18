@@ -2,14 +2,14 @@ package com.teggot.web.Models;
 
 import java.util.List;
 
-public class AllFinder {
+public class ByLengthFinder {
 
     private final List<Product> mList;
 
-    public AllFinder(List<Product> _mList) {
+    public ByLengthFinder(List<Product> _mList) {
         this.mList = _mList;
     }
 
-    public List<Product> getMList() {return mList;}
+    public List<Product> getmList() {return mList;}
 
 }
